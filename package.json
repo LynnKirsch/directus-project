@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
 "scripts": {
-  "start": "directus start",
+"prestart": "chmod +x ./node_modules/.bin/directus || true",
+  "start": "npx directus start",
   "dev": "directus start",
   "test": "echo \"Error: no test specified\" && exit 1"
   },
